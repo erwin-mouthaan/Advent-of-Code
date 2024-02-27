@@ -1,0 +1,5 @@
+* text eol=crlf
+*.pas	eol=crlf
+*.dfm	eol=crlf
+*.dpr	eol=crlf
+*.groupproj	eol=crlf
