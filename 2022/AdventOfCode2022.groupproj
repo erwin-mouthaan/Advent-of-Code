@@ -1,0 +1,108 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{801C33ED-8770-46E6-A99B-30E6DF66A0AE}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Problem 1\Project1.Spring4D.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Problem 2\Project2.Spring4D.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Problem 3\Project3.Spring4D.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Problem 4\Project4.Spring4D.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Problem 5\Project5.Spring4D.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Problem 6\Project6.Spring4D.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Problem 7\Project7.Spring4D.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Project1_Spring4D">
+        <MSBuild Projects="Problem 1\Project1.Spring4D.dproj"/>
+    </Target>
+    <Target Name="Project1_Spring4D:Clean">
+        <MSBuild Projects="Problem 1\Project1.Spring4D.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project1_Spring4D:Make">
+        <MSBuild Projects="Problem 1\Project1.Spring4D.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Project2_Spring4D">
+        <MSBuild Projects="Problem 2\Project2.Spring4D.dproj"/>
+    </Target>
+    <Target Name="Project2_Spring4D:Clean">
+        <MSBuild Projects="Problem 2\Project2.Spring4D.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project2_Spring4D:Make">
+        <MSBuild Projects="Problem 2\Project2.Spring4D.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Project3_Spring4D">
+        <MSBuild Projects="Problem 3\Project3.Spring4D.dproj"/>
+    </Target>
+    <Target Name="Project3_Spring4D:Clean">
+        <MSBuild Projects="Problem 3\Project3.Spring4D.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project3_Spring4D:Make">
+        <MSBuild Projects="Problem 3\Project3.Spring4D.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Project4_Spring4D">
+        <MSBuild Projects="Problem 4\Project4.Spring4D.dproj"/>
+    </Target>
+    <Target Name="Project4_Spring4D:Clean">
+        <MSBuild Projects="Problem 4\Project4.Spring4D.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project4_Spring4D:Make">
+        <MSBuild Projects="Problem 4\Project4.Spring4D.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Project5_Spring4D">
+        <MSBuild Projects="Problem 5\Project5.Spring4D.dproj"/>
+    </Target>
+    <Target Name="Project5_Spring4D:Clean">
+        <MSBuild Projects="Problem 5\Project5.Spring4D.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project5_Spring4D:Make">
+        <MSBuild Projects="Problem 5\Project5.Spring4D.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Project6_Spring4D">
+        <MSBuild Projects="Problem 6\Project6.Spring4D.dproj"/>
+    </Target>
+    <Target Name="Project6_Spring4D:Clean">
+        <MSBuild Projects="Problem 6\Project6.Spring4D.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project6_Spring4D:Make">
+        <MSBuild Projects="Problem 6\Project6.Spring4D.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Project7_Spring4D">
+        <MSBuild Projects="Problem 7\Project7.Spring4D.dproj"/>
+    </Target>
+    <Target Name="Project7_Spring4D:Clean">
+        <MSBuild Projects="Problem 7\Project7.Spring4D.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project7_Spring4D:Make">
+        <MSBuild Projects="Problem 7\Project7.Spring4D.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Project1_Spring4D;Project2_Spring4D;Project3_Spring4D;Project4_Spring4D;Project5_Spring4D;Project6_Spring4D;Project7_Spring4D"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Project1_Spring4D:Clean;Project2_Spring4D:Clean;Project3_Spring4D:Clean;Project4_Spring4D:Clean;Project5_Spring4D:Clean;Project6_Spring4D:Clean;Project7_Spring4D:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Project1_Spring4D:Make;Project2_Spring4D:Make;Project3_Spring4D:Make;Project4_Spring4D:Make;Project5_Spring4D:Make;Project6_Spring4D:Make;Project7_Spring4D:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
